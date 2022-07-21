@@ -1,0 +1,30 @@
+.footer {
+  background: #2c2c2c;
+  display: grid;
+  justify-content: center;
+  font-family: "Poppins";
+  padding: 120px;
+  gap: 36px;
+}
+
+@media (min-width: 960px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__rrss-container {
+  display: grid;
+  justify-content: center;
+  gap: 22px;
+}
+
+.footer_rrss {
+  font-size: 16px;
+}
+
+.footer__rrss-img {
+  width: 27px;
+  height: 27px;
+}

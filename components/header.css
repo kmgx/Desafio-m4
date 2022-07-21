@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 122px;
+  height: 48px;
+}
+
+@media (min-width: 796px) {
+  .logo {
+    width: 197px;
+    height: 48px;
+  }
+}
+
+.header__links {
+  display: none;
+  width: 450px;
+  justify-content: space-between;
+}
+
+@media (min-width: 796px) {
+  .header__links {
+    display: flex;
+  }
+}
+
+.header__links > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Poppins;
+}
+
+.header__menu-button {
+  background: none;
+  border: none;
+}
+
+@media (min-width: 796px) {
+  .header__menu-button {
+    display: none;
+  }
+}
+
+.header__menu-container {
+  display: grid;
+  gap: 3px;
+}
+
+.header__menu-container > div {
+  width: 36px;
+  height: 6px;
+  color: #fff;
+  border: solid 1px;
+  border-radius: 50px;
+}
+
+.header__menu {
+  background-color: #161616;
+  display: none;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  left: 30%;
+  bottom: 40%;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+.header__menu > a {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__close-menu {
+  justify-self: flex-end;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}

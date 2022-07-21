@@ -1,0 +1,48 @@
+.contact {
+  background: #141414;
+  height: 660px;
+  padding: 64px 20px;
+  display: grid;
+  gap: 36px;
+  justify-content: center;
+}
+
+@media (min-width: 960px) {
+  .contact {
+    display: flex;
+    gap: 77px;
+  }
+}
+
+.contact__form {
+  display: grid;
+  width: 335px;
+  font-family: "Poppins";
+  gap: 27px;
+}
+
+.contact--label {
+  display: grid;
+  font-size: 13px;
+  gap: 4px;
+}
+
+.contact--label > input {
+  height: 45px;
+}
+
+.contact__button-container {
+  margin-top: 30px;
+}
+
+.contact__form-button {
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 11px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 16px;
+}

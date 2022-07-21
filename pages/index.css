@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+}
+
+.img-container {
+  background: url(/images/image.png);
+  padding: 24px 24px;
+  height: 616px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bienvenida {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bienvenida__saludo {
+  text-align: center;
+}
+
+.bienvenida__title {
+  font-size: 48px;
+  margin: 0;
+}
+
+.bienvenida__subtitle {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 11px;
+}
+
+.presentacion {
+  background: #141414;
+  display: flex;
+  min-height: 538px;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 31px;
+}
+
+.presentacion__text {
+  display: grid;
+  gap: 56px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 32px;
+  text-align: center;
+}
+
+@media (min-width: 796px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.presentacion__img {
+  width: 550px;
+  height: 480px;
+  display: none;
+}
+
+@media (min-width: 796px) {
+  .presentacion__img {
+    display: inherit;
+  }
+}
+
+.presentacion__p {
+  font-family: "Poppins";
+  font-size: 16px;
+  max-width: 610px;
+}
+
+@media (min-width: 796px) {
+  .presentacion__p {
+    font-size: 24px;
+  }
+}
+
+.servicios {
+  color: #000;
+  background: #fafafa;
+  padding: 70px 52px;
+  font-family: "Poppins";
+}
+
+.servicios__card-container {
+  margin-top: 48px;
+  display: grid;
+  align-items: center;
+  gap: 60px;
+  min-width: 740px;
+  justify-content: center;
+}
+
+@media (min-width: 960px) {
+  .servicios__card-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.servicios__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios__img {
+  width: 138px;
+  height: 128px;
+}
+
+.servicios__text {
+  width: 262px;
+}
+
+.servicios__subtitle {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.servicios__p {
+  font-size: 16px;
+  text-align: center;
+}
