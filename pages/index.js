@@ -1,19 +1,3 @@
-//function serviceComponent (el) {
-//  const serviceComponentEl = document.querySelector(".servicios__card-container")
-//
-//  serviceComponentEl.innerHTML = 
-//        `<div id="servicios__temp">
-//          <img src="" class="servicios__img">
-//          <div class="servicios__text">
-//            <h3 class="servicios__title"></h3>
-//            <p class="servicios__p"></p>      
-//          </div>
-//        </div>`
-//
-//  el.appendChild();
-//}
-
-
 //Recibe la data del CMS Contentful y filtra el array de servicios 
 //con la funcion loadService()
 function getService() {
@@ -29,27 +13,19 @@ function getService() {
 
 //Filtra la data
 function loadService(data) {
-  const serviceArray = data.items
-  //const imgUrl = data.includes.Asset[0].fields.file.url
+  const servicesArray = data.items
+  console.log(servicesArray)
+  const imgUrl = data.includes.Asset[0].fields.file.url
   //-------------------------------
-  const servContainer = document.querySelector(".servicios__card-container");
   const servTemp = document.querySelector("#servicios__temp");
-  const textContainer = servTemp.querySelector(".servicios__text")
-  //const servImg = servContainer.querySelector(".servicios__img")
-  const servTitle = textContainer.querySelector(".servicios__title")
-  const servDesc= textContainer.querySelector(".servicios__p")
-  
-  servContainer.innerHTML = 
-      `<div id="servicios__temp">
-        <img src="" class="servicios__img">
-        <div class="servicios__text">
-          <h3 class="servicios__title"></h3>
-          <p class="servicios__p"></p>      
-        </div>
-      </div>`
+  const servContainer = document.querySelector(".servicios__card-container");
+
+  const servImg = servTemp.content.querySelector(".servicios__img")
+  const servTitle = servTemp.content.querySelector(".servicios__title")
+  const servDesc= servTemp.content.querySelector(".servicios__p")
   //-------------------------------
-  for (const s of serviceArray) {
-    //servImg.src = imgUrl
+  for (const s of servicesArray) {
+    servImg.src = imgUrl
     servTitle.textContent = s.fields.title
     servDesc.textContent = s.fields.description
     
@@ -65,8 +41,8 @@ function main () {
   //headerComponent(document.querySelector(".header-container"))
   //formComponent(document.querySelector(".contacto-container"))
   //footerComponent(document.querySelector(".footer-container"))
-
   getService()
+
 
 }
 main()

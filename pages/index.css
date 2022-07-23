@@ -109,12 +109,6 @@ body {
   }
 }
 
-.servicios__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .servicios__img {
   width: 138px;
   height: 128px;
