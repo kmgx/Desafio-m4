@@ -14,7 +14,6 @@ function getService() {
 //Filtra la data
 function loadService(data) {
   const servicesArray = data.items
-  console.log(servicesArray)
   const imgUrl = data.includes.Asset[0].fields.file.url
   //-------------------------------
   const servTemp = document.querySelector("#servicios__temp");

@@ -16,7 +16,7 @@ function footerComponent(el) {
   </div>
 </footer>`
 
-el.appendChild()
+//el.appendChild()
 
 }
 

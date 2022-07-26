@@ -4,7 +4,7 @@ function headerComponent (el) {
   headerComponentEl.innerHTML =  `<header class="header">
   <img src="./images/caro-icon.png" class="logo">
   <div class="header__links">
-    <a href="./porfolio.html">Portfolio</a>
+    <a href="./portfolio.html">Portfolio</a>
     <a href="./servicios.html">Servicios</a>
     <a href="./contacto.html">Contacto</a>
   </div>
@@ -37,7 +37,7 @@ closeMenuEl.addEventListener("click",() => {
   menuEl.style.display = "none";
 })
 
- el.appendChild();
+ //el.appendChild(headerComponentEl);
 }
 
 headerComponent()

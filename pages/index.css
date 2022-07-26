@@ -7,12 +7,16 @@ body {
   color: #fff;
 }
 
+/*HEADER*/
+
 .img-container {
   background: url(/images/image.png);
   padding: 24px 24px;
   height: 616px;
   font-family: "Montserrat", sans-serif;
 }
+
+/*BIENVENIDA*/
 
 .bienvenida {
   height: 100%;
@@ -35,6 +39,8 @@ body {
   margin: 0;
   margin-top: 11px;
 }
+
+/*PRESENTACION*/
 
 .presentacion {
   background: #141414;
@@ -87,46 +93,4 @@ body {
   }
 }
 
-.servicios {
-  color: #000;
-  background: #fafafa;
-  padding: 70px 52px;
-  font-family: "Poppins";
-}
 
-.servicios__card-container {
-  margin-top: 48px;
-  display: grid;
-  align-items: center;
-  gap: 60px;
-  min-width: 740px;
-  justify-content: center;
-}
-
-@media (min-width: 960px) {
-  .servicios__card-container {
-    grid-template-columns: auto auto auto;
-  }
-}
-
-.servicios__img {
-  width: 138px;
-  height: 128px;
-}
-
-.servicios__text {
-  width: 262px;
-}
-
-.servicios__subtitle {
-  font-size: 24px;
-  text-align: center;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 7px;
-}
-
-.servicios__p {
-  font-size: 16px;
-  text-align: center;
-}

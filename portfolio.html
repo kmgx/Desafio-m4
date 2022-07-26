@@ -4,10 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
+
+  <!-- INDEX -->
+  <link rel="stylesheet" href="/pages/index.css">
+  <script defer src="/pages/index.js"></script>
+
+  <!-- HEADER -->
+  <link rel="stylesheet" href="components/header.css">
+  <script defer src="/components/header.js"></script>
+
+  <!-- PORFOLIO -->
+  <link rel="stylesheet" href="pages/portfolio.css">
+  <script defer src="pages/portfolio.js"></script>
+
+  <!-- FOOTER -->
+  <link rel="stylesheet" href="components/footer.css">
+  <script defer src="components/footer.js"></script>
 </head>
+
 <body>
-  <h1>portfolio</h1>
-    PORTFOLIO
+<div class="main-cont">
+  <div class="header-container"></div>
+  <h2 class="title">Portfolio</h2>  
+  
+</div>
+
+
+<section class="portfolio">
+    <div class="portfolio__card-container"></div>
+
+    <template id="portfolio__temp">
+      <div class="card">
+        <img src="" class="portfolio__img">
+        <div class="portfolio__text">
+          <h3 class="portfolio__title"></h3>
+          <p class="portfolio__p"></p>
+          <a class="link" href="https://apx.school/"></a>      
+        </div>
+      </div>
+    </template>
+  </section>
+
+    <div class="footer-container"></div>
 </body>
 </html>

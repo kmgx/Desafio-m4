@@ -3,7 +3,7 @@ function formComponent (el){
 
   formCompEl.innerHTML = `
   <section class="contact">
-  <h2 class="title">Escribime</h2>
+  <h2 id="contacto-text"  class="title">Escribime</h2>
   <form action="" class="contact__form">
     <label class="contact--label contact__username" for="name">NOMBRE
       <input type="text">
@@ -20,8 +20,37 @@ function formComponent (el){
   </form>
   </section>`
 
-  formEl = document.querySelector(".contact__form");
+  document.getElementById("contacto-text").textContent="Contacto"
 
+  
+  
+  
+  //const mediumBp= matchMedia("(min-width: 600px");
+  ////console.log(mediumBp)
+  //
+  //const changeSize = mql => {
+  //  mql.matches
+  //  ? document.getElementById("contacto-text").style.backgroundColor = "red"
+  //  : document.getElementById("contacto-text").style.backgroundColor = "blue"
+  //}
+  //
+//
+  //mediumBp.addEventListener(changeSize)
+  //changeSize(mediumBp)
+  
+
+
+  if (window.matchMedia("(width > 600px)").matches) {
+    
+    document.getElementById("main-cont").style.background = "red"
+  } else {
+    document.getElementById("main-cont").style.background = "blue"
+  }
+  
+  
+  
+  formEl = document.querySelector(".contact__form");
+  
   formEl.addEventListener("submit",(e) => {
     e.preventDefault()
     const formData = new FormData(e.target);
@@ -43,7 +72,7 @@ function formComponent (el){
 
   })
 
-  el.appendChild()
+  //el.appendChild()
 }
 
 formComponent()
