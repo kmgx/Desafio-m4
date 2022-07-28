@@ -10,7 +10,7 @@
 
 @media (min-width: 960px) {
   .main-cont {
-    background: url(/images/page-img.png);
+    background: url(../images/page-img.png);
     padding: 24px 24px;
   }
 }
