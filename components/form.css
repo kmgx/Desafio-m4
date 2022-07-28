@@ -4,7 +4,7 @@ body{
 
 .main-cont {
   padding: 24px 24px;
-  background: url(/images/page-img.png);
+  background: url(../images/page-img.png);
 }
 
 @media (max-width: 960px) {
