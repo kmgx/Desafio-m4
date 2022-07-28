@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 /*SERVICIOS*/
 
 .main-cont {
@@ -26,13 +25,6 @@
 @media (min-width: 960px) {
   #page-title {
     text-align: left;
-  }
-}
-
-@media (min-width: 960px) {
-  .title {
-    height: 200px;
-    padding: 80px;
   }
 }
 

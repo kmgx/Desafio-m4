@@ -1,22 +1,31 @@
-function formComponent (el){
+function formComponent (){
   const formCompEl = document.querySelector(".contact-container");
 
   formCompEl.innerHTML = `
   <section class="contact">
   <h2 id="contacto-text"  class="title">Escribime</h2>
-  <form action="" class="contact__form">
+  <form class="contact__form">
+
     <label class="contact--label contact__username" for="name">NOMBRE
-      <input type="text">
+      <input type="text" name="name">
     </label>
+
     <label class="contact--label contact__useracc" for="email">EMAIL
-      <input type="email">
+      <input type="email" name="email">
     </label>
+
     <label class="contact--label contact__usermsg" for="name">MENSAJE
-     <textarea name="" id="" cols="30" rows="10"></textarea>
+     <textarea name="message" id="" cols="30" rows="10"></textarea>
     </label>
+
     <div class="contact__button-container">
       <button class="contact__form-button">Enviar</button>
     </div>
+
+    <div class="contact__message-sended">
+    Su mensaje ha sido enviado, gracias! ♡
+    </div>
+
   </form>
   </section>`
   
@@ -25,8 +34,8 @@ function formComponent (el){
   formEl.addEventListener("submit",(e) => {
     e.preventDefault()
     const formData = new FormData(e.target);
-  
     const value = Object.fromEntries(formData.entries());
+    const messageEl = document.querySelector(".contact__message-sended")
 
     fetch('https://apx-api.vercel.app/api/utils/dwf', {
       method: 'POST',
@@ -34,16 +43,24 @@ function formComponent (el){
         'Content-Type': 'application/json'
       },
       body:  JSON.stringify({
-      'to':'carofattore@gmail.com',
-      'message':'Formulario enviado con éxito.'
+      to:'carofattore@gmail.com',
+      message: `Nombre De Usuario: ${value.name}, 
+      Correo Electrónico: ${value.email}, 
+      Mensaje: ${value.message}`
       })
     })
-  .then(res => res.json())
-  .then(data => console.log(data));
+  .then(res => {
+    return res.json()
+  })
+  .then(data => {
+    return data
+  });
+
+  messageEl.style.display="inherit"
+  formEl.reset();
 
   })
 
-  //el.appendChild()
 }
 
 formComponent()

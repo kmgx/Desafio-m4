@@ -50,6 +50,12 @@ body{
   margin-top: 30px;
 }
 
+@media (hover: hover) {
+  .contact__button-container :hover {
+    background: #4C4442;
+  }
+}
+
 .contact__form-button {
   background: #2c2c2c;
   color: #fff;
@@ -60,4 +66,8 @@ body{
   font-family: "Poppins";
   font-weight: bold;
   font-size: 16px;
+}
+
+.contact__message-sended {
+  display: none;
 }

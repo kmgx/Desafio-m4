@@ -1,4 +1,4 @@
-function footerComponent(el) {
+function footerComponent() {
   const footerCompEl = document.querySelector(".footer-container");
 
   footerCompEl.innerHTML =  `<footer class="footer">
@@ -15,8 +15,6 @@ function footerComponent(el) {
     </div>
   </div>
 </footer>`
-
-//el.appendChild()
 
 }
 
