@@ -9,7 +9,7 @@ body {
 /*HEADER*/
 
 .home {
-  background: url(/images/image.png);
+  background: url(./images/image.png);
   padding: 24px 24px;
   height: 616px;
   font-family: "Montserrat", sans-serif;
