@@ -7,26 +7,38 @@
 
 .main-cont {
   background-color: #000000;
-  min-height: 100px;
+  min-height: 300px;
+  padding: 24px 24px;
 }
 
 @media (min-width: 960px) {
   .main-cont {
-    background-color:#FC6F50
-    
+    background: url(/images/page-img.png);
+    padding: 24px 24px;
   }
 }
 
-.title {
-  margin-top: 50px;
+#page-title {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  #page-title {
+    text-align: left;
+  }
 }
 
 @media (min-width: 960px) {
   .title {
     height: 200px;
     padding: 80px;
-    text-align: left;
   }
+}
+
+#servicios {
+  background-color: black;
+  color:#fafafa
 }
 
 .servicios {

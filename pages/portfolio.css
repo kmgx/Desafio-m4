@@ -4,17 +4,20 @@
 
 .main-cont {
   background-color: #000000;
+  min-height: 300px;
+  padding: 24px 24px;
 }
 
 @media (min-width: 960px) {
   .main-cont {
-    background-color:#FC6F50
-    
+    background: url(/images/page-img.png);
+    padding: 24px 24px;
   }
 }
 
 .title {
-  margin-top: 50px;
+  margin-top: 80px;
+  text-align: center;
 }
 
 @media (min-width: 960px) {

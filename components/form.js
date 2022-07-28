@@ -19,35 +19,6 @@ function formComponent (el){
     </div>
   </form>
   </section>`
-
-  document.getElementById("contacto-text").textContent="Contacto"
-
-  
-  
-  
-  //const mediumBp= matchMedia("(min-width: 600px");
-  ////console.log(mediumBp)
-  //
-  //const changeSize = mql => {
-  //  mql.matches
-  //  ? document.getElementById("contacto-text").style.backgroundColor = "red"
-  //  : document.getElementById("contacto-text").style.backgroundColor = "blue"
-  //}
-  //
-//
-  //mediumBp.addEventListener(changeSize)
-  //changeSize(mediumBp)
-  
-
-
-  if (window.matchMedia("(width > 600px)").matches) {
-    
-    document.getElementById("main-cont").style.background = "red"
-  } else {
-    document.getElementById("main-cont").style.background = "blue"
-  }
-  
-  
   
   formEl = document.querySelector(".contact__form");
   

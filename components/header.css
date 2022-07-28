@@ -43,6 +43,12 @@ body {
   font-family: Poppins;
 }
 
+@media (hover: hover) {
+  a:hover {
+    color: #F5EA76;
+  }
+}
+
 .header__menu-button {
   background: none;
   border: none;
@@ -72,13 +78,13 @@ body {
   display: none;
   grid-template-rows: auto 1fr 1fr 1fr;
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 3%;
-  left: 30%;
-  bottom: 40%;
+  left: 3%;
+  bottom: 20%;
   text-align: center;
   border-radius: 10px;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .header__menu > a {

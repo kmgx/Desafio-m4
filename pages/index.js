@@ -16,20 +16,20 @@ function loadService(data) {
   const servicesArray = data.items
   const imgUrl = data.includes.Asset[0].fields.file.url
   //-------------------------------
-  const servTemp = document.querySelector("#servicios__temp");
-  const servContainer = document.querySelector(".servicios__card-container");
+  const template = document.querySelector("#servicios__temp");
+  const container = document.querySelector(".servicios__card-container");
 
-  const servImg = servTemp.content.querySelector(".servicios__img")
-  const servTitle = servTemp.content.querySelector(".servicios__title")
-  const servDesc= servTemp.content.querySelector(".servicios__p")
+  const img = template.content.querySelector(".servicios__img")
+  const title = template.content.querySelector(".servicios__title")
+  const description= template.content.querySelector(".servicios__p")
   //-------------------------------
   for (const s of servicesArray) {
-    servImg.src = imgUrl
-    servTitle.textContent = s.fields.title
-    servDesc.textContent = s.fields.description
+    img.src = imgUrl
+    title.textContent = s.fields.title
+    description.textContent = s.fields.description
     
-    const clone = document.importNode(servTemp.content, true);
-    servContainer.appendChild(clone);  
+    const clone = document.importNode(template.content, true);
+    container.appendChild(clone);  
   }
 }
 

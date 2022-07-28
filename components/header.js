@@ -2,7 +2,7 @@ function headerComponent (el) {
   const headerComponentEl = document.querySelector(".header-container")
   
   headerComponentEl.innerHTML =  `<header class="header">
-  <img src="./images/caro-icon.png" class="logo">
+  <a href="./index.html"> <img src="./images/caro-icon.png" class="logo"> </a>
   <div class="header__links">
     <a href="./portfolio.html">Portfolio</a>
     <a href="./servicios.html">Servicios</a>
@@ -16,7 +16,7 @@ function headerComponent (el) {
     </div>
   </button>
   <div class="header__menu">
-    <button class="header__close-menu">x</button>
+    <img src="./images/close.png" class="header__close-menu"> 
     <a href="./portfolio.html">Portfolio</a>
     <a href="./servicios.html">Servicios</a>
     <a href="./contacto.html">Contacto</a>

@@ -2,8 +2,20 @@ body{
   background: #141414;
 }
 
+.main-cont {
+  padding: 24px 24px;
+  background: url(/images/page-img.png);
+}
+
+@media (max-width: 960px) {
+  .main-cont {
+    background: none;
+    background-color: black;
+  }
+}
+
 .contact {
-  height: 560px;
+  min-height: 560px;
   padding: 64px 20px;
   display: grid;
   gap: 36px;
